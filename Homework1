@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <script>
+      <!-- Задание 1 -->
+      let tempCelsius = 25;
+      let tempFahrenheit = (9 / 5) * tempCelsius + 32;
+      console.log(`Температура ${tempCelsius} градусов в Цельсиях равна:`);
+      console.log(`${tempFahrenheit} градусам по Фаренгейту.`);
+      <!-- Задание 2 -->
+      name = "Наталия";
+      let admin = name;
+      console.log(admin);
+    </script>
+  </body>
+</html>
+
+
