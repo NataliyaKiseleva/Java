@@ -55,6 +55,7 @@ minNum(num1, num2, num3);
 // 2. Разность
 // 3. Умножение
 // 4. Деление
+
 let num1 = Number(prompt(`Введите число 1`));
 let num2 = Number(prompt(`Введите число 2`));
 
@@ -62,7 +63,12 @@ const add = (num1, num2) => {
    alert(`Результат сложения чисел: ${num1 + num2}`);
 }
 const sub = (num1, num2) => {
-    alert(`Результат вычитания чисел: ${num1 - num2}`);
+    if (num1 >= num2) {
+        alert(`Результат вычитания чисел: ${num1 - num2}`);
+    } else {
+        alert(`Результат вычитания чисел: ${num2 - num1}`);
+    }
+    
 }
 const mult = (num1, num2) => {
     alert(`Результат умножения чисел: ${num1 * num2}`);
@@ -74,5 +80,4 @@ add(num1, num2);
 sub(num1, num2); 
 mult(num1, num2); 
 div(num1, num2);
-
 
