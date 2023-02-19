@@ -41,7 +41,7 @@ console.log(`Сумма элементов массива равна: ${sum}`);
 
 // 2. Найти минимальное число
 let min = Math.min(...arrRandom);
-console.log(min);
+console.log(`Минимальное число в массиве: ${min}`);
 
 // 3. Найти есть ли в этом массиве число 3.
 if (arrRandom.includes(3) === true) {
