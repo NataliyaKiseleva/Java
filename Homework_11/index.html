@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cards"></div>
+    <script src="data.js"></script>
+    <script>
+      const dataEl = JSON.parse(dataProduct);
+
+      const cardsBox = document.querySelector(".cards");
+
+      dataEl.forEach((element) => {
+        const productBox = document.createElement("div");
+        productBox.classList.add("card");
+
+        const imgElement = document.createElement("img");
+        imgElement.src = element.src;
+        imgElement.alt = element.alt;
+
+        const h4Element = document.createElement("h4");
+        h4Element.classList.add("card-title");
+        h4Element.textContent = element.name;
+
+        const pElement = document.createElement("p");
+        pElement.classList.add("card-text");
+        pElement.textContent = element.content;
+
+        const costElement = document.createElement("p");
+        costElement.classList.add("cost");
+        costElement.textContent = element.price;
+
+        const coverBox = document.createElement("div");
+        coverBox.classList.add("card-cover");
+
+        const blackoutEl = document.createElement("img");
+        blackoutEl.src = "./img/Rectangle3.png";
+        blackoutEl.alt = "Затемнение";
+
+        const cover2Box = document.createElement("div");
+        cover2Box.classList.add("card-cover2");
+
+        const backEl = document.createElement("img");
+        backEl.src = "./img/Vector1.png";
+        backEl.alt = "Фон";
+
+        const cover3Box = document.createElement("div");
+        cover3Box.classList.add("card-cover3");
+
+        const basketElement = document.createElement("img");
+        basketElement.src = "./img/Vector2.png";
+        basketElement.alt = "Корзина";
+
+        const addElement = document.createElement("p");
+        addElement.textContent = "Add to Cart";
+
+        cardsBox.appendChild(productBox);
+        productBox.appendChild(imgElement);
+        productBox.appendChild(h4Element);
+        productBox.appendChild(pElement);
+        productBox.appendChild(costElement);
+        productBox.appendChild(coverBox);
+        coverBox.appendChild(blackoutEl);
+        coverBox.appendChild(cover2Box);
+        cover2Box.appendChild(backEl);
+        cover2Box.appendChild(cover3Box);
+        cover3Box.appendChild(basketElement);
+        cover3Box.appendChild(addElement);
+      });
+    </script>
+  </body>
+</html>
