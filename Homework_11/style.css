@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./font/Lato-Regular.ttf)
+}
+
+* {
+    font-family: 'Lato';
+    margin: 0 auto;
+}
+
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 581px;
+    background: #F8F8F8;
+    position: relative;
+}
+
+.card-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 420px;
+    opacity: 0%;
+}
+
+.card-cover2 {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    width: 138px;
+    height: 43px;
+}
+
+.card-cover3 {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 11px;
+    align-items: center;
+}
+
+.card-cover:hover {
+    opacity: 100%;
+}
+
+.card-title {
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 16px;
+    color: #676161;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.card-text {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 16px;
+    padding-right: 26px;
+    color: #5D5D5D;
+    margin: 0;
+}
+
+.cost {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 16px;
+    color: #F16D7F;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
