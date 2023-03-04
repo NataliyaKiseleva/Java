@@ -1,0 +1,31 @@
+#videoPlayer {
+    width: 500px;
+}
+
+#video {
+    width: 100%;
+}
+
+.video-track {
+    height: 5px;
+    width: 100%;
+    background-color: #b6b6b6;
+}
+
+.timeline {
+    height: 5px;
+    width: 0;
+    background-color: #3e4143
+}
+
+.buttons {
+    padding: 3px;
+    
+}
+
+.IMG_{
+    width: 20px;
+    width: 20px;
+    margin: -1px;
+    margin-top: 2px;
+}
